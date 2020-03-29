@@ -1,3 +1,3 @@
 # Spring - Dependency Injection
 
-This project is a demo of dependency injection in Spring.
+This project is a demo for dependency injection in Spring.
