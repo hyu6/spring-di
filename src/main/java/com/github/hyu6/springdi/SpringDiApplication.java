@@ -17,7 +17,7 @@ public class SpringDiApplication {
 
         System.out.println(i18nController.hello());
 
-        System.out.println("-------- Primary --------");
+        System.out.println("-------- Primary Bean --------");
 
         MyController myController = (MyController) ctx.getBean("myController");
 
