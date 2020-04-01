@@ -1,9 +1,6 @@
 package com.github.hyu6.springdi;
 
-import com.github.hyu6.springdi.controllers.ConstructorInjectedController;
-import com.github.hyu6.springdi.controllers.MyController;
-import com.github.hyu6.springdi.controllers.PropertyInjectedController;
-import com.github.hyu6.springdi.controllers.SetterInjectedController;
+import com.github.hyu6.springdi.controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
@@ -13,6 +10,12 @@ public class SpringDiApplication {
 
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(SpringDiApplication.class, args);
+
+        System.out.println("-------- I18n --------");
+
+        I18nController i18nController = (I18nController) ctx.getBean("i18nController");
+
+        System.out.println(i18nController.hello());
 
         System.out.println("-------- Primary --------");
 

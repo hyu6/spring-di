@@ -1,6 +1,6 @@
 package com.github.hyu6.springdi.controllers;
 
-import com.github.hyu6.springdi.services.ConstructorGreetingService;
+import com.github.hyu6.springdi.services.ConstructorInjectedGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -11,7 +11,7 @@ class SetterInjectedControllerTest {
     @BeforeEach
     void setUp() {
         controller = new SetterInjectedController();
-        controller.setGreetingService(new ConstructorGreetingService());
+        controller.setGreetingService(new ConstructorInjectedGreetingService());
     }
 
     @Test
