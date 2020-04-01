@@ -11,6 +11,11 @@ public class SpringDiApplication {
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(SpringDiApplication.class, args);
 
+        System.out.println("-------- Best Pet --------");
+
+        PetController petController = ctx.getBean("petController", PetController.class);
+        System.out.println(petController.whichPetIsTheBest());
+
         System.out.println("-------- I18n --------");
 
         I18nController i18nController = (I18nController) ctx.getBean("i18nController");
