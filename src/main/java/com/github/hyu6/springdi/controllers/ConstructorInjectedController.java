@@ -1,10 +1,13 @@
 package com.github.hyu6.springdi.controllers;
 
 import com.github.hyu6.springdi.services.GreetingService;
+import org.springframework.stereotype.Controller;
 
+@Controller
 public class ConstructorInjectedController {
     private final GreetingService greetingService;
 
+    // @Autowired is optional for constructor
     public ConstructorInjectedController(GreetingService greetingService) {
         this.greetingService = greetingService;
     }
