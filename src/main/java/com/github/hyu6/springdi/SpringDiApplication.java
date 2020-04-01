@@ -14,11 +14,11 @@ public class SpringDiApplication {
     public static void main(String[] args) {
         ApplicationContext ctx = SpringApplication.run(SpringDiApplication.class, args);
 
+        System.out.println("-------- Primary --------");
+
         MyController myController = (MyController) ctx.getBean("myController");
 
-        String greetings = myController.hello();
-
-        System.out.println(greetings);
+        System.out.println(myController.hello());
 
         System.out.println("-------- Property --------");
 
