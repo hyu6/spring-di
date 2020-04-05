@@ -1,6 +1,6 @@
 package com.github.hyu6.springdi.controllers;
 
-import com.github.hyu6.springdi.services.ConstructorInjectedGreetingService;
+import com.github.hyu6.springdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
@@ -12,7 +12,7 @@ class PropertyInjectedControllerTest {
     void setUp() {
         controller = new PropertyInjectedController();
 
-        controller.greetingService = new ConstructorInjectedGreetingService();
+        controller.greetingService = new ConstructorGreetingService();
     }
 
     @Test

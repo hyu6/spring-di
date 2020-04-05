@@ -1,9 +1,8 @@
-package com.github.hyu6.springdi.controllers;
+package com.github.hyu6.springdi.controllers.old;
 
-import com.github.hyu6.springdi.services.PetService;
-import org.springframework.stereotype.Controller;
+import com.github.hyu6.springdi.services.old.PetService;
 
-@Controller
+//@Controller
 public class PetController {
 
     private final PetService petService;

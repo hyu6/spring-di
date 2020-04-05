@@ -1,4 +1,4 @@
-package com.github.hyu6.springdi.services;
+package com.github.hyu6.springdi.services.old;
 
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.github.hyu6.springdi.controllers;
+package com.github.hyu6.springdi.controllers.old;
 
 import com.github.hyu6.springdi.services.GreetingService;
 import org.springframework.beans.factory.annotation.Qualifier;

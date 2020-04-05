@@ -1,4 +1,4 @@
-package com.github.hyu6.springdi.services;
+package com.github.hyu6.springdi.services.old;
 
 public interface PetService {
 
