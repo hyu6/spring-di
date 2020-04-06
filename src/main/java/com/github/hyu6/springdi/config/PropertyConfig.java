@@ -35,7 +35,7 @@ public class PropertyConfig {
     String jmsUsername;
 
     @Value("${dev.jms.password}")
-    String jmsPassoword;
+    String jmsPassword;
 
     @Value("${dev.jms.url}")
     String jmsUrl;
@@ -53,7 +53,7 @@ public class PropertyConfig {
     public FakeJmsBroker fakeJmsBroker() {
         FakeJmsBroker jmsBroker = new FakeJmsBroker();
         jmsBroker.setUsername(jmsUsername);
-        jmsBroker.setPassword(jmsPassoword);
+        jmsBroker.setPassword(jmsPassword);
         jmsBroker.setUrl(jmsUrl);
         return jmsBroker;
     }
