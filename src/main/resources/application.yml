@@ -3,3 +3,10 @@ dev:
     username: JMS Username
     password: jmspwd
     url: jmsurl
+
+---
+spring:
+  profiles: es
+dev:
+  jms:
+    username: JMS Username ES
